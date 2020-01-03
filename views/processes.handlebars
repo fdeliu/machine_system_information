@@ -1,0 +1,28 @@
+<div class="container heading">
+   <img src="https://img.icons8.com/plasticine/48/000000/services.png" class="mx-2" width="48" height="48">
+    <h1>Processes</h1>
+</div>
+
+
+<p class="py-1"><strong>Total processes: </strong> {{total}}</p>
+
+{{#each list}}
+<div class="card shadow my-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Name: </strong> {{this.name}}</p>
+                <p><strong>Process CPU usage: </strong>{{this.pcpu}} %</p>
+                <p><strong>Process ID: </strong>{{this.pid}}</p>
+                <p><strong>Parent ID: </strong>{{this.parentPid}}</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Process memory usage: </strong>{{this.pmem}} %</p>
+                <p><strong>Process priotity: </strong>{{this.priority}}</p>
+                <p><strong>Process start time: </strong>{{this.started}}</p>
+                <p><strong>Process state: </strong>{{this.state}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

@@ -1,0 +1,15 @@
+<h1 class="text-center">Graphics</h1>
+
+
+<div class="card shadow my-3">
+  <div class="card-body">
+    {{#each controllers}}
+      <p><strong>Model: </strong>{{model}}</p>
+      <p><strong>Vendor: </strong>{{vendor}}</p>
+      <p><strong>Bus: </strong>{{bus}}</p>
+      <p><strong>VRAM size: </strong>{{vram}}</p>
+      <p><strong>Dynamicly allocated RAM: </strong>{{vramDynamic}}</p>
+      <hr>
+   {{/each}}
+  </div>
+</div>

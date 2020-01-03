@@ -1,0 +1,15 @@
+<div class="container heading">
+   <img src="https://img.icons8.com/dusk/48/000000/docker.png" class="mx-2" width="48" height="48">
+    <h1 class="text-center">Docker Info</h1>
+</div>
+
+<div class="card shadow my-3">
+    <div class="card-body">
+        {{#each dockerInfo}}
+        <p><strong class="capitalize">{{@key}}: </strong>{{this}}</p>
+       {{else}}
+        <h3>No Docker to show.</h3>
+        {{/each}}
+    </div>
+</div>
+

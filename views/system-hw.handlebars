@@ -1,0 +1,60 @@
+<div class="container heading">
+   <img src="https://img.icons8.com/dusk/48/000000/system-information.png" class="mx-2" width="48" height="48">
+    <h1>System (HW)</h1>
+</div>
+
+
+
+  <h4>Hardware Info</h4>
+  <table class="table table-bordered table-responsive">
+    <thead>
+      <tr>
+        {{#each sysHardware}}
+        <th class="capitalize">{{@key}}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {{#each sysHardware}}
+        <td>{{this}}</td>
+        {{/each}}
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Bios Info</h4>
+  <table class="table table-bordered table-responsive">
+    <thead>
+      <tr>
+        {{#each bios}}
+        <th class="capitalize">{{@key}}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {{#each bios}}
+        <td>{{this}}</td>
+        {{/each}}
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Baseboard Info</h4>
+  <table class="table table-bordered table-responsive">
+    <thead>
+      <tr>
+        {{#each baseboard}}
+        <th class="capitalize">{{@key}}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {{#each baseboard}}
+        <td>{{this}}</td>
+        {{/each}}
+      </tr>
+    </tbody>
+  </table>

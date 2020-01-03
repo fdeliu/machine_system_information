@@ -1,0 +1,14 @@
+<div class="container heading">
+   <img src="https://img.icons8.com/cute-clipart/48/000000/wifi.png" class="mx-2" width="48" height="48">
+    <h1>Wifi</h1>
+</div>
+
+{{#each wifi}}
+    <div class="card shadow my-3">
+        <div class="card-body">
+            {{#each this}}
+            <p><strong class="capitalize">{{@key}}: </strong>{{this}}</p>
+            {{/each}}
+        </div>
+    </div>
+{{/each}}
