@@ -14,7 +14,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-status-monitor": "^1.2.7",
-    "systeminformation": "^4.16.0"
+    "systeminformation": "^5.6.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
